@@ -16,7 +16,7 @@ const body = [
 </script>
 
 <template>
-  <section class="w-full flex flex-col md:flex-row justify-between items-stretch md:items-center py-12 px-4 md:px-24 gap-6">
+  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-center py-12 px-4 md:px-24 gap-6">
     <!-- Left Column -->
     <div class="md:w-1/3 flex flex-col justify-start">
       <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase">

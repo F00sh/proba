@@ -13,6 +13,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
       'About': typeof import("../components/About.vue")['default']
+    'Contact': typeof import("../components/Contact.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Skills': typeof import("../components/Skills.vue")['default']
     'VideoBackground': typeof import("../components/VideoBackground.vue")['default']
@@ -43,6 +44,7 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAbout': LazyComponent<typeof import("../components/About.vue")['default']>
+    'LazyContact': LazyComponent<typeof import("../components/Contact.vue")['default']>
     'LazyFooter': LazyComponent<typeof import("../components/Footer.vue")['default']>
     'LazySkills': LazyComponent<typeof import("../components/Skills.vue")['default']>
     'LazyVideoBackground': LazyComponent<typeof import("../components/VideoBackground.vue")['default']>
@@ -79,6 +81,7 @@ declare module 'vue' {
 }
 
 export const About: typeof import("../components/About.vue")['default']
+export const Contact: typeof import("../components/Contact.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Skills: typeof import("../components/Skills.vue")['default']
 export const VideoBackground: typeof import("../components/VideoBackground.vue")['default']
@@ -109,6 +112,7 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAbout: LazyComponent<typeof import("../components/About.vue")['default']>
+export const LazyContact: LazyComponent<typeof import("../components/Contact.vue")['default']>
 export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
 export const LazySkills: LazyComponent<typeof import("../components/Skills.vue")['default']>
 export const LazyVideoBackground: LazyComponent<typeof import("../components/VideoBackground.vue")['default']>

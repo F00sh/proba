@@ -4,7 +4,8 @@
   <VideoBackground />
   <Navbar />
   <Header />
-  <About />
-  <Skills />
+ <section id="about"><About /></section>
+  <section id="work"><Skills /></section>
+  <section id="contact"><Contact /></section>
   <Footer />
 </template>
