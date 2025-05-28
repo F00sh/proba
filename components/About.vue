@@ -16,20 +16,20 @@ const body = [
 </script>
 
 <template>
-  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-center py-12 px-4 md:px-24 gap-6">
+  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-start py-12 px-4 md:px-24 gap-6">
     <!-- Left Column -->
-    <div class="md:w-1/3 flex flex-col justify-start">
+    <div class="md:w-1/3 flex flex-col justify-start items-start">
       <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase">
         ABOUT ME
       </h2>
-      <ul class="space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
+      <ul class="space-y-2 md:space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
         <li v-for="(skill, i) in skills" :key="i">
           {{ skill }}
         </li>
       </ul>
     </div>
     <!-- Right Column -->
-    <div class="md:w-2/3 bg-white/10 rounded-xl p-8 text-white text-lg font-light leading-relaxed border border-white/10 shadow-xl">
+    <div class="md:w-2/3 bg-white/10 rounded-xl p-8 text-white text-md font-light leading-relaxed border border-white/10 shadow-xl mb-14">
       <p class="mb-6" v-for="(p, i) in body" :key="i">{{ p }}</p>
     </div>
   </section>

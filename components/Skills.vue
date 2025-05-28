@@ -7,6 +7,9 @@ const skills = [
   "Blender",
   "Rhinoceros",
   "Solidworks",
+  "Cinema4D",
+  "Unity",
+  "Unreal",
   "Nuxt"
 ]
 
@@ -39,13 +42,13 @@ function goToWork() {
 </script>
 
 <template>
-  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-center py-12 pb-28 px-4 md:px-24 gap-6">
+  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-start py-12 pb-28 px-4 md:px-24 gap-6">
     <!-- Left Column -->
     <div class="md:w-1/3 flex flex-col justify-start">
       <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase">
         Skills
       </h2>
-      <ul class="space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
+      <ul class="space-y-2 md:space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
         <li v-for="(skill, i) in skills" :key="i">
           {{ skill }}
         </li>
@@ -63,7 +66,7 @@ function goToWork() {
       </transition>
       <button
         @click="goToWork"
-        class="mt-2 px-8 py-3 rounded bg-black/80 text-white text-lg font-semibold tracking-wide uppercase hover:bg-white hover:text-black border border-white transition"
+        class="mt-2 px-8 py-3 rounded-2xl bg-black/80 text-white text-lg font-semibold tracking-wide uppercase hover:text-teal-300 transition mb-14"
       >
         See Work
       </button>

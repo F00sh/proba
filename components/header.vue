@@ -8,8 +8,8 @@
     <!-- Content slot for your hero text/buttons -->
     <div class="relative z-20 flex flex-col items-center justify-center w-full h-full text-white text-center px-4">
       <slot>
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">Your Headline Here</h1>
-        <p class="text-xl md:text-2xl mb-8">Your subtitle or CTA goes here</p>
+        <h1 class="text-8xl md:text-[18rem] font-bold mb-6">FOOSH</h1>
+        <p class="text-[0.92rem] md:text-[2.76rem] mb-8">design | animation | CAD | UX | illustration | love</p>
       </slot>
     </div>
   </header>
