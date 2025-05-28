@@ -1,7 +1,5 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useI18n } from '#imports'
-const { t, locale, setLocale } = useI18n()
 
 // Navbar scroll/hide logic
 const isNavVisible = ref(true)
@@ -33,23 +31,14 @@ onUnmounted(() => {
     <!-- Navigation Links -->
     <ul class="flex space-x-12">
       <li>
-        <a href="#about">{{ t('navbar.about') }}</a>
+        <a href="#about" class="text-white hover:text-gray-300 transition">ABOUT</a>
       </li>
       <li>
-        <a href="#work">{{ t('navbar.work') }}</a>
+        <a href="#work" class="text-white hover:text-gray-300 transition">WORK</a>
       </li>
       <li>
-        <a href="#contact">{{ t('navbar.contact') }}</a>
+        <a href="#contact" class="text-white hover:text-gray-300 transition">CONTACT</a>
       </li>
     </ul>
-    <!-- Language Switcher -->
-    <div>
-      <button
-        @click="setLocale(locale.value === 'en' ? 'hr' : 'en')"
-        class="ml-4 px-3 py-1 rounded bg-white text-black font-bold uppercase"
-      >
-        {{ locale.value === 'en' ? 'HR' : 'EN' }}
-      </button>
-    </div>
   </nav>
 </template>

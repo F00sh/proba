@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed inset-0 w-screen h-screen z-0 pointer-events-none">
+  <div class="fixed inset-0 w-screen h-screen -z-10 pointer-events-none">
     <video
       src="https://www.w3schools.com/howto/rain.mp4"
       autoplay

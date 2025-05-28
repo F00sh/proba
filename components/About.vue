@@ -1,20 +1,18 @@
 <script setup>
-import { useI18n } from 'vue-i18n' // or '#imports' in Nuxt 3+
-const { t } = useI18n({
-  messages: {
-    en: {
-      about: {
-        title: "About Us",
-        skills: ["Coding", "Design", "Testing"],
-        body: [
-          "This is some information about us.",
-          "We excel at development."
-        ]
-      }
-    }
-  },
-  fallbackLocale: 'en'
-})
+const skills = [
+  "GRAPHIC DESIGN",
+  "3D MODELING",
+  "ANIMATION",
+  "UI/UX",
+  "WEB"
+]
+
+const body = [
+  "As a versatile product designer, I specialize in game design, animation, web design, and more.",
+  "With a bachelor's degree in product design and a solid foundation in art and design, I am equipped to deliver high-quality services in product and graphic design, 3D modeling, 2D/3D animation, web design, UI/UX, and video game asset modeling and mechanics design.",
+  "I am proficient in using Adobe Creative Suite, Blender, HTML & CSS, Figma, Revit, and AutoCAD. I am eager to collaborate with steady clients who value creativity and precision in their projects.",
+  "Based in Croatia, I am ready to bring your vision to life with innovative and effective design solutions."
+]
 </script>
 
 <template>
@@ -22,17 +20,17 @@ const { t } = useI18n({
     <!-- Left Column -->
     <div class="md:w-1/3 flex flex-col justify-start">
       <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase">
-        {{ t('about.title') }}
+        ABOUT ME
       </h2>
       <ul class="space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
-        <li v-for="(skill, i) in t('about.skills', { returnObjects: true })" :key="i">
+        <li v-for="(skill, i) in skills" :key="i">
           {{ skill }}
         </li>
       </ul>
     </div>
     <!-- Right Column -->
     <div class="md:w-2/3 bg-white/10 rounded-xl p-8 text-white text-lg font-light leading-relaxed border border-white/10 shadow-xl">
-      <p class="mb-6" v-for="(p, i) in t('about.body', { returnObjects: true })" :key="i">{{ p }}</p>
+      <p class="mb-6" v-for="(p, i) in body" :key="i">{{ p }}</p>
     </div>
   </section>
 </template>

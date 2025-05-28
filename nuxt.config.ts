@@ -1,15 +1,24 @@
+// nuxt.config.ts
+
 export default defineNuxtConfig({
+  // Enable auto-import for components in /components folder
+  components: true,
+
+  // Tailwind CSS module
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n'
+    '@nuxtjs/tailwindcss'
   ],
-  i18n: {
-    locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'hr', name: 'Hrvatski', file: 'hr.json' }
-    ],
-    lazy: true,
-    langDir: 'i18n/locales/',   // <-- only one i18n in path!
-    defaultLocale: 'en'
-  }
+
+  // Optional: Specify CSS file if using custom Tailwind config
+  css: [
+    '~/assets/css/main.css'
+  ],
+
+  // Enable devtools
+  devtools: { enabled: true },
+
+  // Optional: Vite custom config (not required for most setups)
+  // vite: {
+  //   plugins: []
+  // }
 })

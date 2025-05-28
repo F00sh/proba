@@ -117,40 +117,10 @@
         "../assets/css/main"
       ],
       "#tailwindcss/sources": [
-        "./tailwindcss/sources.css"
-      ],
-      "vue-i18n": [
-        "../node_modules/vue-i18n/dist/vue-i18n"
-      ],
-      "@intlify/shared": [
-        "../node_modules/@intlify/shared/dist/shared"
-      ],
-      "@intlify/message-compiler": [
-        "../node_modules/@intlify/message-compiler/dist/message-compiler"
-      ],
-      "@intlify/core-base": [
-        "../node_modules/@intlify/core-base/dist/core-base"
-      ],
-      "@intlify/core": [
-        "../node_modules/@intlify/core/dist/core.node"
-      ],
-      "@intlify/utils/h3": [
-        "../node_modules/@intlify/utils/dist/h3"
-      ],
-      "ufo": [
-        "../node_modules/ufo/dist/index"
-      ],
-      "#i18n": [
-        "../node_modules/@nuxtjs/i18n/dist/runtime/composables/index"
-      ],
-      "#internal-i18n-types": [
-        "../node_modules/@nuxtjs/i18n/dist/types"
-      ],
-      "#nuxt-i18n/logger": [
-        "./nuxt-i18n-logger.mjs"
+        "./tailwindcss/sources"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/dev"
       ],
       "#components": [
         "./components"
@@ -196,8 +166,6 @@
     "./nuxt.d.ts",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/@nuxtjs/tailwindcss/dist/runtime",
-    "../node_modules/@nuxtjs/i18n/runtime",
-    "../node_modules/@nuxtjs/i18n/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
@@ -210,13 +178,10 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/node_modules",
-    "../node_modules/@nuxtjs/i18n/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/dist/runtime/server",
-    "../node_modules/@nuxtjs/i18n/runtime/server",
-    "../node_modules/@nuxtjs/i18n/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
