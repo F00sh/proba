@@ -42,35 +42,33 @@ function goToWork() {
 </script>
 
 <template>
-  <section class="w-full h-screen flex flex-col md:flex-row justify-between items-stretch md:items-start py-12 pb-28 px-4 md:px-24 gap-6">
+  <section class="relative w-full h-screen flex flex-col md:flex-row justify-between md:justify-center items-stretch md:items-center py-12 pb-28 px-4 md:px-24 gap-6">
     <!-- Left Column -->
     <div class="md:w-1/3 flex flex-col justify-start">
-      <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase">
+      <h2 class="text-5xl md:text-6xl font-bold tracking-wide mb-6 text-white uppercase hover:text-purple-500 transition-colors">
         Skills
       </h2>
       <ul class="space-y-2 md:space-y-4 text-2xl md:text-3xl tracking-widest text-white/90">
-        <li v-for="(skill, i) in skills" :key="i">
+        <li v-for="(skill, i) in skills" :key="i" class="hover:pl-5 duration-300  hover:text-purple-500">
           {{ skill }}
         </li>
       </ul>
     </div>
     <!-- Right Column -->
-    <div class="md:w-2/3 flex flex-col items-center bg-white/10 rounded-xl p-8 border border-white/10 shadow-xl min-h-[340px]">
       <transition name="fade" mode="out-in">
         <img
           :key="images[current]"
           :src="images[current]"
           alt="Skill showcase"
-          class="object-cover rounded-lg w-full max-w-lg h-64 mx-auto mb-8 shadow"
+          class="object-cover rounded-lg w-full h-full mx-auto shadow items-center justify-center"
         />
       </transition>
-      <button
+          <button
         @click="goToWork"
-        class="mt-2 px-8 py-3 rounded-2xl bg-black/80 text-white text-lg font-semibold tracking-wide uppercase hover:text-teal-300 transition mb-14"
+        class="md:absolute bottom-30 md:left-20 mt-2 px-8 py-3 rounded-2xl bg-black/80 text-white text-lg font-semibold tracking-wide uppercase hover:text-teal-300 transition"
       >
         See Work
       </button>
-    </div>
   </section>
 </template>
 

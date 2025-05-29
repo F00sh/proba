@@ -68,7 +68,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     <ul class="flex space-x-12">
       <li v-for="item in menu" :key="item.label">
         <a
-          class="text-white hover:text-gray-300 transition cursor-pointer"
+          class="text-white hover:text-purple-500 transition cursor-pointer"
           @click.prevent="handleItem(item)"
         >
           {{ item.label }}
